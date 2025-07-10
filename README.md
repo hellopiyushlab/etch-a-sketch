@@ -5,8 +5,8 @@ You can make pixel art on this.
 - [x] Input options for number of boxes
 - [x] Ability to press-hold and color
 - [x] Input color options
-- [ ] Eraser
-- [ ] Mobile Friendly
-- [ ] Make it look good
-- [ ] Function to download the drawn image
-- [ ] Background reference image
+- [ ] New DOM
+- [ ] New CSS
+- [ ] Enable Eraser
+- [ ] Add image uploader for reference image
+- [ ] Download option
