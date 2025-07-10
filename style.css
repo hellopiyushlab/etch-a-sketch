@@ -23,12 +23,9 @@ body {
     border-bottom: 1px solid black;
     display: flex;
 }
-.column {
+.box {
     box-sizing: border-box;
     border-left: 1px solid black;
     border-right: 1px solid black;
     flex: 1;
-}
-.column:hover {
-    background-color:rgb(139, 139, 139);
 }

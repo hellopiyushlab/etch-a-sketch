@@ -3,7 +3,7 @@ You can make pixel art on this.
 
 ### To DO
 - [ ] Input options for number of boxes
-- [ ] Ability to hover and color
+- [x] Ability to press-hold and color
 - [ ] Input color options
 - [ ] Eraser
 - [ ] Mobile Friendly
