@@ -1,5 +1,5 @@
 :root {
-    --font:  #54422b;
+    --font: #54422b;
     --mainBackground: #f1f2e0;
     --footer: #cac6b2;
     --leftBackground: #a29a85;
@@ -20,36 +20,34 @@
     flex: 1;
 }
 
-/* boxes for visualization */
-/* .main, .footer { */
-    /* border: 2px solid black; */
-/* } */
-
-body {
-    box-sizing: border-box;
+/* Base reset and layout */
+html, body {
     margin: 0;
-    height: 100dvh;
+    padding: 0;
+    height: 100%;
+}
+body {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: stretch;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 /* MAIN */
 .main {
-    height: 95dvh;
+    flex: 1;
     width: 100%;
     background-color: var(--mainBackground);
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    overflow: hidden;
 }
 
-/* sketch options container */
+/* Left panel */
 .sketchOptionsContainer {
     width: 20dvw;
-    height: 95dvh;
-    /* border: 1px solid black; */
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -64,21 +62,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:  var(--font);
+    color: var(--font);
     font-family: "Pixelify Sans", sans-serif;
     font-size: 24px;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     background-color: var(--buttons);
     box-shadow: 5px 5px #222222;
 }
 
-/* sketch box container */
+/* Sketch board */
 .sketchBoardContainer {
     width: 50dvw;
-    height: 95dvh;
-    /* border: 1px solid black; */
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,32 +85,27 @@ body {
     width: 90%;
     max-width: 825px;
     background-color: white;
-    /* border: 1px solid black; */
     box-shadow: var(--font) 10px 10px;
 }
 .instruction {
     margin-top: 15px;
     color: var(--font);
-    font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
 }
 
-/* misc options container */
+/* Right panel */
 .miscOptionsContainer {
     width: 30dvw;
-    height: 95dvh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
 }
 .referenceImageContainer {
-    height: 70dvh;
+    height: 70%;
     width: 100%;
-    /* border: black solid 1px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -126,14 +117,12 @@ body {
     width: 95%;
     box-sizing: border-box;
     border: var(--font) 1px solid;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin: 25px 0;
     box-shadow: #222222 10px 10px;
 }
 .uploadButton {
     align-self: flex-end;
-    margin: 25px;
-    margin-top: 0px;
+    margin: 0 25px;
     cursor: pointer;
     border: var(--font) solid 1px;
     aspect-ratio: 3/1;
@@ -142,16 +131,13 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--font);
-    font-family: "Pixelify Sans", sans-serif;
     font-size: 24px;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
     background-color: var(--buttons);
     box-shadow: 5px 5px #222222;
 }
 .downloadButtonContainer {
-    height: 30dvh;
+    height: 30%;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -166,11 +152,8 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--font);
-    font-family: "Pixelify Sans", sans-serif;
     font-size: 24px;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
     background-color: var(--buttons);
     box-shadow: 5px 5px #222222;
     margin: 25px;
@@ -178,20 +161,18 @@ body {
 
 /* FOOTER */
 .footer {
-    height: 5dvh;
+    height: 60px;
     width: 100%;
     background-color: var(--footer);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .footerText {
     color: var(--font);
-    font-family: "Pixelify Sans", sans-serif;
     font-size: 24px;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
