@@ -1,5 +1,8 @@
 # 🎨 Etch-a-Sketch
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://your-username.github.io/your-repo-name/)
+
+
 A retro-inspired pixel drawing app built with HTML, CSS, and JavaScript.  
 This interactive tool lets users draw pixel art by clicking and dragging, upload reference images, and download their creations as images — all within a clean, stylized interface.
 
