@@ -3,7 +3,7 @@
 A retro-inspired pixel drawing app built with HTML, CSS, and JavaScript.  
 This interactive tool lets users draw pixel art by clicking and dragging, upload reference images, and download their creations as images — all within a clean, stylized interface.
 
-![Etch-a-Sketch Demo](screenshotWithoutRef.png)
+![Etch-a-Sketch Demo](/Assets/screenshotWithoutRef.png)
 
 ---
 
@@ -31,11 +31,8 @@ This interactive tool lets users draw pixel art by clicking and dragging, upload
 
 ## 📸 Interface Overview
 
-```plaintext
-+---------------------------+---------------------------+---------------------------+
-|    Sketch Options (Left) |     Sketchboard (Middle)  |    Image & Download (Right)|
-+---------------------------+---------------------------+---------------------------+
-|  - Color Picker          |  - Draw Pixel Art         |  - Upload Reference Image |
-|  - Grid Size Buttons     |  - "Click & Hold" To Draw |  - Download Button        |
-|  - Eraser Button         |                           |                            |
-+---------------------------+---------------------------+---------------------------+
+| 🎛️ Sketch Options (Left)      | 🎨 Sketchboard (Middle)        | 🖼️ Image & Download (Right)       |
+|-------------------------------|--------------------------------|-----------------------------------|
+| - 🎨 Color Picker             | - ✍️ Draw Pixel Art            | - 🖼️ Upload Reference Image       |
+| - 📏 Grid Size Buttons        |                                | - 📥 Download Button              |
+| - 🧽 Eraser Tool              |                                |                                   |
