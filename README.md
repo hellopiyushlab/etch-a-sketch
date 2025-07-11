@@ -29,6 +29,17 @@ This interactive tool lets users draw pixel art by clicking and dragging, upload
 
 ---
 
+## 🔮 Future Prospects & Improvements
+
+- [ ] Use reference image as a stencil (overlay or underlay for tracing)
+- [ ] Allow transparent PNG download (remove white background)
+- [ ] Touch/multitouch support for mobile/tablets
+- [ ] Undo/Redo drawing steps
+- [ ] Zoom and pan canvas
+- [ ] Animation mode: frame-by-frame pixel art export
+
+---
+
 ## 📸 Interface Overview
 
 | 🎛️ Sketch Options (Left)      | 🎨 Sketchboard (Middle)        | 🖼️ Image & Download (Right)       |
