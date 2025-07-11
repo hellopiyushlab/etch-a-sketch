@@ -73,6 +73,9 @@ body {
     background-color: var(--buttons);
     box-shadow: 5px 5px #222222;
 }
+.leftButton:hover {
+    background-color: #838071;
+}
 .leftButton#colorChoice {
     height: 50px;
     border-radius: 5px;
@@ -146,6 +149,9 @@ body {
     background-color: var(--buttons);
     box-shadow: 5px 5px #222222;
 }
+#uploadButton:hover {
+    background-color: #838071;
+}
 .downloadButtonContainer {
     height: 30%;
     width: 100%;
@@ -167,6 +173,9 @@ body {
     background-color: var(--buttons);
     box-shadow: 5px 5px #222222;
     margin: 25px;
+}
+.downloadButton:hover {
+    background-color: #838071;
 }
 
 /* FOOTER */
