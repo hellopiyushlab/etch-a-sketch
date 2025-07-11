@@ -1,6 +1,6 @@
 # 🎨 Etch-a-Sketch
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://your-username.github.io/your-repo-name/)
+[![Live Demo](https://hellopiyushlab.github.io/etch-a-sketch/)](https://github.com/hellopiyushlab/etch-a-sketch)
 
 
 A retro-inspired pixel drawing app built with HTML, CSS, and JavaScript.  
