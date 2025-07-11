@@ -1,79 +1,4 @@
-body {
-    height: 100vh;
-    max-height: 100vh;
-    margin: 0px;
-    display: flex; 
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
-    box-sizing: border-box;
-    user-select: none;
-}
-
-.main,
-.footer { 
-    /* for temporary visualizing */
-    /* border: solid black 2px; */
-    
-    flex: 1 1 auto;
-    width: 100vw;
-    box-sizing: border-box;
-}
-/* .main div { */
-    /* for temporary visualizing */
-    /* border: 1px solid black; */
-/* } */
-
-.main {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
-}
-
-/* sketch options container*/
-.sketchOptionsContainer {
-    width: 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.leftButton {
-    width: auto;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Tiny5", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-    cursor: pointer;
-    border: 3px solid black;
-    box-shadow: 10px 10px black;
-
-}
-
-/* sketch board container */
-.sketchBoardContainer {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sketchBoard {
-    box-sizing: border-box;
-    border: solid black 5px;
-    height: 700px;
-    width: 700px;
-    background-color: white;
-    display:flex;
-    flex-direction: column;
-    box-shadow: 10px 10px black;
-}
+/* FOR JS */
 .row {
     box-sizing: border-box;
     border-top: 1px solid black;
@@ -82,109 +7,190 @@ body {
 }
 .box {
     box-sizing: border-box;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
     flex: 1;
+}
+
+/* boxes for visualization */
+/* .main, .footer { */
+    /* border: 2px solid black; */
+/* } */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+/* MAIN */
+.main {
+    height: 95dvh;
+    width: 100%;
+    background-color: #FFF1E0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+/* sketch options container */
+.sketchOptionsContainer {
+    width: 20dvw;
+    height: 95dvh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fcdcb5;
+}
+.leftButton {
+    cursor: pointer;
+    border: #222222 solid 1px;
+    aspect-ratio: 3/1;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #A0D2EB;
+    box-shadow: 5px 5px #222222;
+}
+
+/* sketch box container */
+.sketchBoardContainer {
+    width: 50dvw;
+    height: 95dvh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sketchBoard {
+    aspect-ratio: 1 / 1;
+    width: 90%;
+    max-width: 700px;
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: #222222 10px 10px;
 }
 .instruction {
     margin-top: 15px;
-    font-family: "Tiny5", sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    font-style: normal;
-    cursor: pointer
-}
-
-.footer {
-    max-height: 5vh;
-    min-height: 5vh;
-    background-color: black;
-    border: solid white 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: white;
-    font-family: "Tiny5", sans-serif;
+    color: #222222;
+    font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
-/* Centered text */
+/* misc options container */
+.miscOptionsContainer {
+    width: 30dvw;
+    height: 95dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.referenceImageContainer {
+    height: 70dvh;
+    width: 100%;
+    /* border: black solid 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.referenceImage {
+    aspect-ratio: 1/1;
+    width: 95%;
+    box-sizing: border-box;
+    border: black 1px solid;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    box-shadow: #222222 10px 10px;
+}
+.uploadButton {
+    align-self: flex-end;
+    margin: 25px;
+    margin-top: 0px;
+    cursor: pointer;
+    border: #222222 solid 1px;
+    aspect-ratio: 3/1;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #A0D2EB;
+    box-shadow: 5px 5px #222222;
+}
+.downloadButtonContainer {
+    height: 30dvh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.downloadButton {
+    cursor: pointer;
+    border: #222222 solid 1px;
+    aspect-ratio: 3/1;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #A0D2EB;
+    box-shadow: 5px 5px #222222;
+    margin: 25px;
+}
+
+/* FOOTER */
+.footer {
+    height: 5dvh;
+    width: 100%;
+    background-color: #CDB4DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footerText {
+    color: #222222;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-
-/* GitHub icon on the right */
 .githubIcon {
-    position: absolute;
-    right: 20px;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-.githubIcon:hover {
-    color: #ccc;
-}
-
-
-/* misc options container */
-.miscOptionsContainer {
-    /* border: 2px black solid; */
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.referenceImageContainer {
-    /* border: 2px black solid; */
-    height: fit-content;
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
-}
-.referenceImage {
-    height: 30vw;
-    width: 30vw;
-    box-shadow: 10px 10px black;
-    border: 3px solid black;
-    margin-bottom: 20px;
-}
-.uploadButton {
-    height: 5vh;
-    display: flex;
-    width: 20vh;
-    align-items: center;
-    justify-content: center;
-    font-family: "Tiny5", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 34px;
+    color: #222222;
     cursor: pointer;
-    border: 3px solid black;
-    box-shadow: 10px 10px black;
-}
-
-.downloadButton {
-    height: 5vh;
-    display: flex;
-    width: 30vw;
-    align-items: center;
-    justify-content: center;
-    font-family: "Tiny5", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-    cursor: pointer;
-    border: 3px solid black;
-    box-shadow: 10px 10px black;
-    /* margin-bottom: 10vh; */
 }
