@@ -1,5 +1,7 @@
 # Etch-a-Sketch
 You can make pixel art on this.
+![Screenshot One](screenshotWithRef.png?raw=true "Screenshot with reference")
+![Screenshot Two](screenshotWithoutRef.png?raw=true "Screenshot without reference")
 
 ### To DO
 - [x] Input options for number of boxes
@@ -11,4 +13,4 @@ You can make pixel art on this.
 - [x] Make a Footer
 - [x] Add image uploader for reference image
 - [x] Download option
-- [ ] Final CSS fix
+- [x] Final CSS fix

@@ -1,5 +1,5 @@
 const colorPicker   = document.getElementById("colorChoice");
-
+colorPicker.value = "black"; // default color
 let noOfBoxes       = 64; // initial number of boxes
 
 createGrid(noOfBoxes); // initial grid
@@ -59,17 +59,48 @@ imageInput.addEventListener("change", () => {
     reader.readAsDataURL(file);
   }
 });
+
 downloadButton.addEventListener("click", () => {
+    const sketchBoard = document.getElementById("sketchBoard");
+
+    // Backup original box shadow and borders
     const originalBoxShadow = sketchBoard.style.boxShadow;
+
+    const rows = document.querySelectorAll(".row");
+    const boxes = document.querySelectorAll(".box");
+
+    // Temporarily remove borders
+    rows.forEach(row => {
+        row.style.borderTop = "none";
+        row.style.borderBottom = "none";
+    });
+    boxes.forEach(box => {
+        box.style.borderLeft = "none";
+        box.style.borderRight = "none";
+    });
+
     sketchBoard.style.boxShadow = "none";
+
     html2canvas(sketchBoard).then(canvas => {
         const link = document.createElement("a");
-        link.download = "sketch.png"; // name of the downloaded file
+        link.download = "sketch.png";
         link.href = canvas.toDataURL("image/png");
         link.click();
+
+        // Restore original borders and box shadow
+        rows.forEach(row => {
+            row.style.borderTop = "1px solid black";
+            row.style.borderBottom = "1px solid black";
+        });
+        boxes.forEach(box => {
+            box.style.borderLeft = "1px solid #333333";
+            box.style.borderRight = "1px solid #333333";
+        });
+
         sketchBoard.style.boxShadow = originalBoxShadow;
     });
 });
+
 
 // to color only when holding left click
 let isMouseDown     = false;

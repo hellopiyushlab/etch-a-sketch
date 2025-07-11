@@ -1,14 +1,22 @@
+:root {
+    --font:  #54422b;
+    --mainBackground: #f1f2e0;
+    --footer: #cac6b2;
+    --leftBackground: #a29a85;
+    --buttons: #cac6b2;
+}
+
 /* FOR JS */
 .row {
     box-sizing: border-box;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid var(--footer);
+    border-bottom: 1px solid var(--footer);
     display: flex;
 }
 .box {
     box-sizing: border-box;
-    border-left: 1px solid #333333;
-    border-right: 1px solid #333333;
+    border-left: 1px solid var(--footer);
+    border-right: 1px solid var(--footer);
     flex: 1;
 }
 
@@ -31,7 +39,7 @@ body {
 .main {
     height: 95dvh;
     width: 100%;
-    background-color: #FFF1E0;
+    background-color: var(--mainBackground);
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -46,7 +54,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #fcdcb5;
+    background-color: var(--leftBackground);
 }
 .leftButton {
     cursor: pointer;
@@ -56,13 +64,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #222222;
+    color:  var(--font);
     font-family: "Pixelify Sans", sans-serif;
     font-size: 24px;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    background-color: #A0D2EB;
+    background-color: var(--buttons);
     box-shadow: 5px 5px #222222;
 }
 
@@ -79,14 +87,14 @@ body {
 .sketchBoard {
     aspect-ratio: 1 / 1;
     width: 90%;
-    max-width: 700px;
+    max-width: 825px;
     background-color: white;
     /* border: 1px solid black; */
-    box-shadow: #222222 10px 10px;
+    box-shadow: var(--font) 10px 10px;
 }
 .instruction {
     margin-top: 15px;
-    color: #222222;
+    color: var(--font);
     font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
     font-optical-sizing: auto;
@@ -113,10 +121,11 @@ body {
     align-items: flex-start;
 }
 .referenceImage {
+    background-color: white;
     aspect-ratio: 1/1;
     width: 95%;
     box-sizing: border-box;
-    border: black 1px solid;
+    border: var(--font) 1px solid;
     margin-bottom: 25px;
     margin-top: 25px;
     box-shadow: #222222 10px 10px;
@@ -126,19 +135,19 @@ body {
     margin: 25px;
     margin-top: 0px;
     cursor: pointer;
-    border: #222222 solid 1px;
+    border: var(--font) solid 1px;
     aspect-ratio: 3/1;
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #222222;
+    color: var(--font);
     font-family: "Pixelify Sans", sans-serif;
     font-size: 24px;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    background-color: #A0D2EB;
+    background-color: var(--buttons);
     box-shadow: 5px 5px #222222;
 }
 .downloadButtonContainer {
@@ -150,19 +159,19 @@ body {
 }
 .downloadButton {
     cursor: pointer;
-    border: #222222 solid 1px;
+    border: var(--font) solid 1px;
     aspect-ratio: 3/1;
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #222222;
+    color: var(--font);
     font-family: "Pixelify Sans", sans-serif;
     font-size: 24px;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    background-color: #A0D2EB;
+    background-color: var(--buttons);
     box-shadow: 5px 5px #222222;
     margin: 25px;
 }
@@ -171,13 +180,13 @@ body {
 .footer {
     height: 5dvh;
     width: 100%;
-    background-color: #CDB4DB;
+    background-color: var(--footer);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .footerText {
-    color: #222222;
+    color: var(--font);
     font-family: "Pixelify Sans", sans-serif;
     font-size: 24px;
     font-optical-sizing: auto;
@@ -191,6 +200,6 @@ body {
     margin-left: auto;
     margin-right: 10px;
     font-size: 34px;
-    color: #222222;
+    color: var(--font);
     cursor: pointer;
 }
