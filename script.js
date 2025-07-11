@@ -9,6 +9,7 @@ const eightBit      = document.querySelector("#eightBit");
 const sixteenBit    = document.querySelector("#sixteenBit");
 const thirtyTwoBit  = document.querySelector("#thirtyTwoBit");
 const sixtyFourBit  = document.querySelector("#sixtyFourBit");
+const oneTwentyEight = document.querySelector("#oneTwentyEight");
 
 // add "click" event listeners to pixel selector buttons
 // each event listener changes noOfBoxes & calls createGrid()
@@ -28,6 +29,14 @@ sixtyFourBit.addEventListener("click", () => {
     noOfBoxes = 64*64;
     createGrid(noOfBoxes);
 });
+oneTwentyEight.addEventListener("click", () => {
+    noOfBoxes = 128*128;
+    createGrid(noOfBoxes);
+});
+
+// eraser button
+const eraser        = document.querySelector("#eraser");
+eraser.addEventListener("click", () => {colorPicker.value = "#ffffff"})
 
 // to color only when holding left click
 let isMouseDown     = false;

@@ -12,7 +12,7 @@ body {
 .main,
 .footer { 
     /* for temporary visualizing */
-    border: solid black 2px;
+    /* border: solid black 2px; */
     
     flex: 1 1 auto;
     width: 100vw;
@@ -25,6 +25,8 @@ body {
 
 .footer {
     max-height: 5vh;
+    background-color: black;
+    border: solid white 4px;
 }
 
 .main {
@@ -55,6 +57,7 @@ body {
     font-style: normal;
     cursor: pointer;
     border: 3px solid black;
+    box-shadow: 10px 10px black;
 
 }
 
@@ -73,6 +76,7 @@ body {
     background-color: white;
     display:flex;
     flex-direction: column;
+    box-shadow: 10px 10px black;
 }
 .row {
     box-sizing: border-box;
