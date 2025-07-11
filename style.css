@@ -1,5 +1,5 @@
 body {
-    min-height: 100vh;
+    height: 100vh;
     margin: 0px;
     display: flex; 
     flex-direction: column;
@@ -94,13 +94,9 @@ body {
     cursor: pointer
 }
 
-/* misc options container */
-.miscOptionsContainer {
-    width: 30vw;
-}
-
 .footer {
     max-height: 5vh;
+    min-height: 5vh;
     background-color: black;
     border: solid white 4px;
     display: flex;
@@ -130,4 +126,64 @@ body {
 
 .githubIcon:hover {
     color: #ccc;
+}
+
+
+/* misc options container */
+.miscOptionsContainer {
+    /* border: 2px black solid; */
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.referenceImageContainer {
+    /* border: 2px black solid; */
+    height: fit-content;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.referenceImage {
+    height: 30vw;
+    width: 30vw;
+    box-shadow: 10px 10px black;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+.uploadButton {
+    height: 5vh;
+    display: flex;
+    width: 20vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Tiny5", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    border: 3px solid black;
+    box-shadow: 10px 10px black;
+}
+
+.downloadButton {
+    height: 5vh;
+    display: flex;
+    width: 30vw;
+    align-items: center;
+    justify-content: center;
+    font-family: "Tiny5", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    border: 3px solid black;
+    box-shadow: 10px 10px black;
+    /* margin-bottom: 10vh; */
 }

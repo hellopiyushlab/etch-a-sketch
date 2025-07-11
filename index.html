@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Protest+Guerrilla&family=Tiny5&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </head>
 <body>
     <div class="main">
-
+        <!-- left -->
         <div class="sketchOptionsContainer">
 
             <input type="color" class="leftButton" id="colorChoice" value="black">
@@ -26,15 +27,22 @@
             <div class="leftButton" id="eraser">Eraser</div>
 
         </div>
-
+        <!-- middle -->
         <div class="sketchBoardContainer">
             
             <div class="sketchBoard" id="sketchBoard"></div>
             <div class="instruction">CLICK & HOLD TO DRAW</div>
         
         </div>
-        
-        <div class="miscOptionsContainer"></div>
+        <!-- right -->
+        <div class="miscOptionsContainer">
+            <div class="referenceImageContainer">
+                <div class="referenceImage" id="referenceImage"></div>
+                <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                <div class="uploadButton" id="uploadButton">Upload!</div>
+            </div>
+            <div class="downloadButton" id="downloadButton">Download!</div>
+        </div>
     
     </div>
     

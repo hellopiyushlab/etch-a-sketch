@@ -38,6 +38,39 @@ oneTwentyEight.addEventListener("click", () => {
 const eraser        = document.querySelector("#eraser");
 eraser.addEventListener("click", () => {colorPicker.value = "#ffffff"})
 
+// get upload & download buttons, and reference image div
+const uploadButton  = document.querySelector("#uploadButton");
+const downloadButton = document.querySelector("#downloadButton");
+const referenceImage = document.querySelector("#referenceImage");
+const imageInput = document.getElementById("imageUpload");
+
+// add event listeners on upload and download button
+uploadButton.addEventListener("click", () => {imageInput.click();});
+imageInput.addEventListener("change", () => {
+  const file = imageInput.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      referenceImage.style.backgroundImage = `url(${e.target.result})`;
+      referenceImage.style.backgroundSize = 'contain';
+      referenceImage.style.backgroundRepeat = 'no-repeat';
+      referenceImage.style.backgroundPosition = 'center';
+    };
+    reader.readAsDataURL(file);
+  }
+});
+downloadButton.addEventListener("click", () => {
+    const originalBoxShadow = sketchBoard.style.boxShadow;
+    sketchBoard.style.boxShadow = "none";
+    html2canvas(sketchBoard).then(canvas => {
+        const link = document.createElement("a");
+        link.download = "sketch.png"; // name of the downloaded file
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+        sketchBoard.style.boxShadow = originalBoxShadow;
+    });
+});
+
 // to color only when holding left click
 let isMouseDown     = false;
 document.addEventListener("mousedown", () => {isMouseDown = true;});
