@@ -8,6 +8,7 @@ You can make pixel art on this.
 - [x] New DOM
 - [x] New CSS
 - [x] Enable Eraser
-- [ ] Make a Footer
-- [ ] Add image uploader for reference image
-- [ ] Download option
+- [x] Make a Footer
+- [x] Add image uploader for reference image
+- [x] Download option
+- [ ] Final CSS fix
