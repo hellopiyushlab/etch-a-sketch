@@ -88,7 +88,7 @@ body {
 }
 .sketchBoard {
     aspect-ratio: 1 / 1;
-    width: 70%;
+    width: 60%;
     max-width: 825px;
     min-width: 300px;
     background-color: white;
@@ -122,6 +122,7 @@ body {
     background-color: white;
     aspect-ratio: 1/1;
     width: 95%;
+    min-width: 200px;
     box-sizing: border-box;
     border: var(--font) 1px solid;
     margin: 25px 0;
