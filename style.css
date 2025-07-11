@@ -56,6 +56,8 @@ body {
 }
 .leftButton {
     cursor: pointer;
+    box-sizing: border-box;
+    padding: 0px;
     border: #222222 solid 1px;
     aspect-ratio: 3/1;
     width: 70%;
@@ -70,6 +72,10 @@ body {
     background-color: var(--buttons);
     box-shadow: 5px 5px #222222;
 }
+.leftButton#colorChoice {
+    height: 50px;
+    border-radius: 5px;
+}
 
 /* Sketch board */
 .sketchBoardContainer {
@@ -82,8 +88,9 @@ body {
 }
 .sketchBoard {
     aspect-ratio: 1 / 1;
-    width: 90%;
+    width: 70%;
     max-width: 825px;
+    min-width: 300px;
     background-color: white;
     box-shadow: var(--font) 10px 10px;
 }
