@@ -23,12 +23,6 @@ body {
     /* border: 1px solid black; */
 /* } */
 
-.footer {
-    max-height: 5vh;
-    background-color: black;
-    border: solid white 4px;
-}
-
 .main {
     display: flex;
     justify-content: space-evenly;
@@ -65,6 +59,7 @@ body {
 .sketchBoardContainer {
     width: 50vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -90,8 +85,49 @@ body {
     border-right: 1px solid black;
     flex: 1;
 }
+.instruction {
+    margin-top: 15px;
+    font-family: "Tiny5", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer
+}
 
 /* misc options container */
 .miscOptionsContainer {
     width: 30vw;
+}
+
+.footer {
+    max-height: 5vh;
+    background-color: black;
+    border: solid white 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    font-family: "Tiny5", sans-serif;
+    font-size: 20px;
+}
+
+/* Centered text */
+.footerText {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* GitHub icon on the right */
+.githubIcon {
+    position: absolute;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.githubIcon:hover {
+    color: #ccc;
 }

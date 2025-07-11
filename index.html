@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Protest+Guerrilla&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="main">
 
         <div class="sketchOptionsContainer">
 
-            <input type="color" class="leftButton" id="colorChoice" value="#ff0000">
+            <input type="color" class="leftButton" id="colorChoice" value="black">
             <div class="leftButton" id="eightBit">8 x 8</div>
             <div class="leftButton" id="sixteenBit">16 x 16</div>
             <div class="leftButton" id="thirtyTwoBit">32 x 32</div>
@@ -29,6 +30,7 @@
         <div class="sketchBoardContainer">
             
             <div class="sketchBoard" id="sketchBoard"></div>
+            <div class="instruction">CLICK & HOLD TO DRAW</div>
         
         </div>
         
@@ -37,10 +39,10 @@
     </div>
     
     <div class="footer">
-        
-        <div class="infoContainer"></div>
-        <div class="iconsContainer"></div>
-    
-    </div>
+        <div class="footerText">Etch-a-Sketch</div>
+            <a class="githubIcon" href="https://github.com/hellopiyushlab/etch-a-sketch" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
 </body>
 </html>

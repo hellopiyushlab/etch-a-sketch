@@ -77,10 +77,13 @@ function createGrid(noOfBoxes) {
     // enable drawing
     const boxes = document.querySelectorAll(".box"); // select all boxes, returns a NodeList
     boxes.forEach(box => {
-    box.addEventListener("mouseenter", () => {
+        box.addEventListener("mouseenter", () => {
             if (isMouseDown) {
                 box.style.backgroundColor = colorPicker.value;
             }
+        });
+        box.addEventListener("click", () => {
+            box.style.backgroundColor = colorPicker.value;
         });
     });
 }
