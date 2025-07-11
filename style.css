@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    max-height: 100vh;
     margin: 0px;
     display: flex; 
     flex-direction: column;
@@ -66,8 +67,8 @@ body {
 .sketchBoard {
     box-sizing: border-box;
     border: solid black 5px;
-    height: 47vw;
-    width: 47vw;
+    height: 700px;
+    width: 700px;
     background-color: white;
     display:flex;
     flex-direction: column;
