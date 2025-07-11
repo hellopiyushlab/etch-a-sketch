@@ -42,6 +42,7 @@ eraser.addEventListener("click", () => {colorPicker.value = "#ffffff"})
 const uploadButton  = document.querySelector("#uploadButton");
 const downloadButton = document.querySelector("#downloadButton");
 const referenceImage = document.querySelector("#referenceImage");
+const stencil = document.querySelector(".stencil");
 const imageInput = document.getElementById("imageUpload");
 
 // add event listeners on upload and download button
@@ -55,6 +56,12 @@ imageInput.addEventListener("change", () => {
       referenceImage.style.backgroundSize = 'contain';
       referenceImage.style.backgroundRepeat = 'no-repeat';
       referenceImage.style.backgroundPosition = 'center';
+
+      stencil.style.backgroundImage = `url(${e.target.result})`;
+      stencil.style.backgroundSize = 'contain';
+      stencil.style.backgroundRepeat = 'no-repeat';
+      stencil.style.backgroundPosition = 'center';
+    //   stencil.style.opacity = '0.4';
     };
     reader.readAsDataURL(file);
   }
