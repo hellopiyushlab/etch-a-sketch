@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch a Sketch</title>
+    <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,11 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Protest+Guerrilla&family=Tiny5&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="sketch-board"></div>
-    <div class="buttons">
-        <div class="pixelButton" id="sixteenBit">16x16</div>
-        <input type="color" id="colorChoice" value="#ff0000">
-        <div class="pixelButton" id="thirtyTwoBit">32x32</div>
+    <div class="main">
+
+        <div class="sketchOptionsContainer">
+
+            <input type="color" class="leftButton" id="colorChoice" value="ff0000">
+            <div class="leftButton" id="eightBit">8 x 8</div>
+            <div class="leftButton" id="sixteenBit">16 x 16</div>
+            <div class="leftButton" id="thirtyTwoBit">32 x 32</div>
+            <div class="leftButton" id="sixtyFourBit">64 x 64</div>
+            <!-- change the next two buttons later -->
+            <div class="leftButton" id="sixtyFourBit">64 x 64</div>
+            <div class="leftButton" id="sixtyFourBit">64 x 64</div>
+
+        </div>
+
+        <div class="sketchBoardContainer">
+            
+            <div class="sketchBoard"></div>
+        
+        </div>
+        
+        <div class="miscOptionsContainer"></div>
+    
+    </div>
+    
+    <div class="footer">
+        
+        <div class="infoContainer"></div>
+        <div class="iconsContainer"></div>
+    
     </div>
 </body>
 </html>

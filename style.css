@@ -1,78 +1,79 @@
 body {
+    min-height: 100vh;
     margin: 0px;
-    height: 100vh;
-    background-color: #dddddd;
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: stretch;
     align-items: center;
-}
-#sketch-board {
-    border: solid black 3px;
-    height: 700px;
-    width: 700px;
-    background-color: white;
-    display:flex;
-    flex-direction: column;
+    box-sizing: border-box;
 }
 
-.row {
+.main,
+.footer { 
+    /* for temporary visualizing */
+    /* border: solid black 2px; */
+    
+    flex: 1 1 auto;
+    width: 100vw;
     box-sizing: border-box;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    display: flex;
 }
-.box {
-    box-sizing: border-box;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    flex: 1;
+/* .main div { */
+    /* for temporary visualizing */
+    /* border: 1px solid black; */
+/* } */
+
+.footer {
+    max-height: 5vh;
 }
-.buttons {
+
+.main {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    width: 700px;
+    align-items: stretch;
 }
-.pixelButton {
+
+/* sketch options container*/
+.sketchOptionsContainer {
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.leftButton {
+    width: auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Tiny5", sans-serif;
+    font-size: 20px;
     font-weight: 400;
     font-style: normal;
     cursor: pointer;
-    background: hsl(0, 0%, 100%);
-    padding: 16px 24px;
-    position: relative;
-    border-radius: 8px;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+    border: 3px solid black;
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 15px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    transform: scale(0.9) translateZ(0);
-    filter: blur(15px);
-    background: linear-gradient(
-      to left,
-      #5EABD6,
-      #FEFBC7,
-      #FFB4B4,
-      #E14434
-    );
-    background-size: 200% 200%;
-    animation: animateGlow 1.25s linear infinite;
-  }
 }
 
-@keyframes animateGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
+/* sketch board container */
+.sketchBoardContainer {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sketchBoard {
+    box-sizing: border-box;
+    border: solid black 5px;
+    height: 47vw;
+    width: 47vw;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+
+}
+
+/* misc options container */
+.miscOptionsContainer {
+    width: 30vw;
 }
