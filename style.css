@@ -1,9 +1,9 @@
 :root {
-    --font: #54422b;
-    --mainBackground: #f1f2e0;
-    --footer: #cac6b2;
-    --leftBackground: #a29a85;
-    --buttons: #cac6b2;
+    --font: #000000;
+    --mainBackground: #c0f7fe;
+    --footer: #9ae885;
+    --leftBackground: #c0f7fe;
+    --buttons: #fe90e7;
 }
 
 /* FOR JS */
@@ -58,7 +58,7 @@ body {
     cursor: pointer;
     box-sizing: border-box;
     padding: 0px;
-    border: #222222 solid 1px;
+    border: #222222 solid 3px;
     aspect-ratio: 3/1;
     width: 70%;
     display: flex;
@@ -124,7 +124,7 @@ body {
     width: 95%;
     min-width: 200px;
     box-sizing: border-box;
-    border: var(--font) 1px solid;
+    border: var(--font) 3px solid;
     margin: 25px 0;
     box-shadow: #222222 10px 10px;
 }
@@ -133,7 +133,7 @@ body {
     /* margin: 0 25px; */
     height: 50px;
     cursor: pointer;
-    border: var(--font) solid 1px;
+    border: var(--font) solid 3px;
     /* aspect-ratio: 3/1; */
     width: 40%;
     display: flex;
@@ -154,7 +154,7 @@ body {
 }
 .downloadButton {
     cursor: pointer;
-    border: var(--font) solid 1px;
+    border: var(--font) solid 3px;
     aspect-ratio: 3/1;
     width: 40%;
     display: flex;
