@@ -6,7 +6,7 @@
 A retro-inspired pixel drawing app built with HTML, CSS, and JavaScript.  
 This interactive tool lets users draw pixel art by clicking and dragging, upload reference images, and download their creations as images — all within a clean, stylized interface.
 
-![Etch-a-Sketch Demo](/Assets/screenshotWithoutRef.png)
+![Etch-a-Sketch Demo](/Assets/screenshot.png)
 
 ---
 
